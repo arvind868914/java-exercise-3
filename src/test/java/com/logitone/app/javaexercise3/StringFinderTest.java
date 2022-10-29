@@ -7,13 +7,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class StringFinderTest {
-	private static final String MESSAGE_ONE = "Should return 1 when string found as expected";
-    private static final String MESSAGE_TWO = "Should return 0 when string is not found as expected";
-    private static final String MESSAGE_THREE = "Should return -1 for empty or null values";
-    private static StringFinder object;
-    private static final String[][] VALID_VALUES = {{"string finder", "string", "finder"}, {"string comes later", "string", "later"}};
-    private static final String[][] INVALID_VALUES = {{"string finder", "finder", "string"}, {"string does not comes later", "later", "string"}, {"String not matching", "new", "matching"}, {"string not matching", "string", "value"}};
-    private static final String[][] EMPTY_VALUES = {{"", "finder", "string"}, {"string comes later", "", "string"}, {"string", "first", ""}, {"", "", ""}, {null, "value1", "value2"}, {"string values", null, null}, {null, null, null}};
+	static final String MESSAGE_ONE = "Should return 1 when string found as expected";
+    static final String MESSAGE_TWO = "Should return 0 when string is not found as expected";
+    static final String MESSAGE_THREE = "Should return -1 for empty or null values";
+    static StringFinder object;
+    static final String[][] VALID_VALUES = {{"string finder", "string", "finder"}, {"string comes later", "string", "later"}};
+    static final String[][] INVALID_VALUES = {{"string finder", "finder", "string"}, {"string does not comes later", "later", "string"}, {"String not matching", "new", "matching"}, {"string not matching", "string", "value"}};
+    static final String[][] EMPTY_VALUES = {{"", "finder", "string"}, {"string comes later", "", "string"}, {"string", "first", ""}, {"", "", ""}, {null, "value1", "value2"}, {"string values", null, null}, {null, null, null}};
 
     @BeforeEach
     public void setUp() {
